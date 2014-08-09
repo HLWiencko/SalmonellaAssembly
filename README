@@ -1,0 +1,14 @@
+File list:
+
+Reference genome used for read mapping:
+SL1344_reference.fa
+
+De novo assembled genomes contiguated with ABACAS:
+velvetLinear.fasta
+spadesLinear.fasta
+
+Variants called with samtools, mapping sequence reads against the two assemblies and the reference:
+velvet.samtools.vcf
+spades.samtools.vcf
+ref.samtools.vcf
+
