@@ -1,0 +1,4 @@
+time bowtie2-build ../a5Linear.fasta a5 > build.out 
+time bowtie2 --very-sensitive-local -1 ../../data/SL1344-swap_S4_L001_R1_001.fastq.gz -2 ../../data/SL1344-swap_S4_L001_R2_001.fastq.gz -p 6 -x a5 -k 4 2> bowtie2.log | samtools view -bS - > a5_bowtie2_very_sensitive_local_k4.bam; date
+samtools view a5_bowtie2_very_sensitive_local_k4.bam | perl  ~khokamp/bin/column_frequency.pl -c 1 > getFreq.out
+samtools sort a5_bowtie2_very_sensitive_local_k4.bam a5_bowtie2_very_sensitive_local_k4.sorted
