@@ -7,6 +7,9 @@ De novo assembled genomes contiguated with ABACAS:
 velvetLinear.fasta
 spadesLinear.fasta
 
+De novo assembled consensus sequence from Geneious:
+geneious.fasta
+
 Variants called with samtools, mapping sequence reads against the two assemblies and the reference:
 velvet.samtools.vcf
 spades.samtools.vcf
