@@ -1,0 +1,4 @@
+time bowtie2-build ../geneious.fasta geneious > build.out 
+time bowtie2 --very-sensitive-local -1 ../../CharlesDorman/data/SL1344-swap_S4_L001_R1_001.fastq.gz -2 ../../CharlesDorman/data/SL1344-swap_S4_L001_R2_001.fastq.gz -p 6 -x geneious -k 4 2> bowtie2.log | samtools view -bS - > geneious_bowtie2_very_sensitive_local_k4.bam; date
+samtools view geneious_bowtie2_very_sensitive_local_k4.bam | perl  ~khokamp/bin/column_frequency.pl -c 1 > getFreq.out
+samtools sort geneious_bowtie2_very_sensitive_local_k4.bam geneious_bowtie2_very_sensitive_local_k4.sorted

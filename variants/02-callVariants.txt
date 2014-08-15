@@ -1,2 +1,2 @@
-samtools mpileup -uD -f geneious.fasta geneious_bowtie2_very_sensitive_local_k4.sorted.bam | /usr/local/samtools-0.1.19/bcftools/bcftools view -bvcg - > geneious.raw.bcf
+samtools mpileup -uD -f ../geneious.fasta geneious_bowtie2_very_sensitive_local_k4.sorted.bam | /usr/local/samtools-0.1.19/bcftools/bcftools view -bvcg - > geneious.raw.bcf
 /usr/local/samtools-0.1.19/bcftools/bcftools view geneious.raw.bcf | /usr/local/samtools-0.1.19/bcftools/vcfutils.pl varFilter -D100 > geneious.samtools.vcf

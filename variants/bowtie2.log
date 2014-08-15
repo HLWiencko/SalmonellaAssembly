@@ -1,1 +1,15 @@
-./command.txt: line 2: bowtie2: command not found
+1859881 reads; of these:
+  1859881 (100.00%) were paired; of these:
+    925326 (49.75%) aligned concordantly 0 times
+    881399 (47.39%) aligned concordantly exactly 1 time
+    53156 (2.86%) aligned concordantly >1 times
+    ----
+    925326 pairs aligned concordantly 0 times; of these:
+      755400 (81.64%) aligned discordantly 1 time
+    ----
+    169926 pairs aligned 0 times concordantly or discordantly; of these:
+      339852 mates make up the pairs; of these:
+        206004 (60.62%) aligned 0 times
+        58299 (17.15%) aligned exactly 1 time
+        75549 (22.23%) aligned >1 times
+94.46% overall alignment rate
